@@ -7,11 +7,12 @@
 <h1> AccessorySkate, le site d'accessoires et gadgets dont vous avez besoin !  </h1>
 
 <nav>
+
+<!-- logo du site -->
 <h2 class="logo"><a href="#">AccessorySkate</a></h2>
 
 <!-- liste ul pour connexion deco panier et fav ( si co ) -->
      <ul class="menu">
-        <!-- inclure le logo du site -->
 
 
         <!-- Connexion -->
