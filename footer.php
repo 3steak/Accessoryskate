@@ -1,1 +1,4 @@
-<link rel="stylesheet" href="footer.css"/>
+
+        <p>Je suis le footer</p>
+    </body>
+</html>
