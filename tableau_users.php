@@ -40,7 +40,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                                 <td><?= $users['type'] ?></td>
 
                                 <td>    
-                                    <a  class="btn btn-primary" href="edit.php" role = "button">Edit</a>
+                                    <a  class="btn btn-primary" href="edit.php?id=<?php echo $users['id'] ?>" role = "button">Edit</a>
                                     <a  class="btn btn-danger" href ="delete.php" role = "button">Delete</a>
                                 </td>
                             </tr>
