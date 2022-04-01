@@ -1,8 +1,14 @@
 <?php include "header.php";
 ?>
-
+<?
+// je selectionne tout de ma table category
+$sql = "SELECT * FROM `category`";
+$query = $db->prepare($sql);
+$query->execute();
+$categories = $query->fetchAll(PDO::FETCH_ASSOC);
+?>
 <div class="container">
-    <h2>Ajout de Catégorie</h2>
+    <h2>Ajout de Produit</h2>
     <form class="row g-3" method="post" action="ajouter_products.php">
         <div class="col-md-6">
             <label class="form-label">Name</label>
@@ -42,10 +48,23 @@
                 <option value="0">non</option>
             </select>
         </div>
+        <div class="col-md-6">
+            <label for="inputState" class="form-label">Appartient à la catégorie ?</label>
+
+            <select id="inputState" class="form-select" name="category_id">
+                <?php foreach ($categories as $categorie) {;
+                ?>
+
+                    <option value="<?= $categorie['id']; ?>"><?= $categorie['name']; ?><?= $categorie['id']; ?></option>
+                <?php } ?>
+
+            </select>
+        </div>
         <div>
             <input type="submit" class="btn btn-primary" value="Ajouter">
             <button type="reset" class="btn btn-secondary">Réinitaliser</button>
         </div>
+
     </form>
 </div>
 <?php include "footer.php";
