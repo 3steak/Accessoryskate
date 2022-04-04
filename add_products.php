@@ -55,7 +55,7 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
                 <?php foreach ($categories as $categorie) {;
                 ?>
 
-                    <option value="<?= $categorie['id']; ?>"><?= $categorie['name']; ?><?= $categorie['id']; ?></option>
+                    <option value="<?= $categorie['id']; ?>"><?= $categorie['name']; ?></option>
                 <?php } ?>
 
             </select>

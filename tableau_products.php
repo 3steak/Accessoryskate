@@ -54,8 +54,8 @@ $produits = $query->fetchAll(PDO::FETCH_ASSOC);
 
                     <td>
                         <!--TODO mettre un icone a la place du bouton ( crayon et poubelle) !-->
-                        <a class="btn btn-primary" href="edit_category.php?id=<?php echo $category['id'] ?>" role="button">Edit</a>
-                        <a class="btn btn-danger" href="delete_category.php?id=<?php echo $category['id'] ?>" role="button">Delete</a>
+                        <a class="btn btn-primary" href="edit_products.php?id=<?php echo $products['id'] ?>" role="button">Edit</a>
+                        <a class="btn btn-danger" href="delete_products.php?id=<?php echo $products['id'] ?>" role="button">Delete</a>
                     </td>
                 </tr>
             <?php
