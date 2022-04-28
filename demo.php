@@ -19,7 +19,7 @@ if (isset($_GET["nbr"])) {
     }
 };
 ?>
-<form action="demo.php" method="GET">
+<form action="" method="GET">
     <label for="name">Trouve le nombre: </label>
     <input type="number" name="nbr" placeholder="Entre 0 et 100" value="<?= htmlentities($_GET["nbr"]) ?>">
     <button type="submit">Entrer</button>
