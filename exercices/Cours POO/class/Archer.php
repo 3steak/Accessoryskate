@@ -1,4 +1,6 @@
 <?php
+
+namespace Tutoriel;
 // extends : prendre les propriétés de Personnage, donc son PARENT
 class Archer extends Personnage
 {

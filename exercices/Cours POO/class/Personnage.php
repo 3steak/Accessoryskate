@@ -1,4 +1,7 @@
 <?php
+
+namespace Tutoriel;
+
 class Personnage
 {
     // je définis des propriétés (des variables) à mon perso 

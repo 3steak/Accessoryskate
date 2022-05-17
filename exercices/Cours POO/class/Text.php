@@ -1,5 +1,7 @@
 <?php
 
+namespace Tutoriel;
+
 class Text
 {
 

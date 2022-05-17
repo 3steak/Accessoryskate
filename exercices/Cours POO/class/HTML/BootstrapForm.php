@@ -1,5 +1,8 @@
 <?php
-class BootstrapForm extends \Tutoriel\HTML\Form
+
+namespace Tutoriel\HTML;
+
+class BootstrapForm extends  Form
 {
     /**
      * @param $html Code HTML à entourer
@@ -8,7 +11,7 @@ class BootstrapForm extends \Tutoriel\HTML\Form
 
     protected function surround($html)
     {
-        return "<div class=\"form-group\">{$html}</div>";
+        return "<div class=\"container\">{$html}</div>";
     }
 
     /**
