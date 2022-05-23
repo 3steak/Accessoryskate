@@ -17,6 +17,7 @@ class Database
 
     public  function __construct($db_name, $db_user = 'root', $db_pass = '', $db_host = 'localhost')
     {
+
         $this->db_name = $db_name;
 
         $this->db_user = $db_user;

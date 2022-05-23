@@ -2,8 +2,16 @@
 
 namespace App\Table;
 
+use App\App;
+
 class Article
 {
+
+    public static function getLast()
+    {
+        return App::getDb()->query('SELECT * FROM articles', __CLASS__);
+    }
+
 
     public function __get($key)
     {
