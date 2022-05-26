@@ -3,6 +3,14 @@
 class Soldat
 {
 
+
+    /**
+     * __construct
+     *
+     * @param  mixed $name
+     * @param  mixed $attaque
+     * @return void
+     */
     private function __construct($name, $attaque)
     {
     }
@@ -12,6 +20,12 @@ class Soldat
     public $defense = 10;
     public $x = 0;
 
+    /**
+     * attaquer
+     *
+     * @param  mixed $vieAdversaire
+     * @return void
+     */
     function attaquer($vieAdversaire)
     {
         $this->walk;
@@ -19,6 +33,11 @@ class Soldat
     }
 
 
+    /**
+     * walk
+     *
+     * @return void
+     */
     function walk()
     {
         $this->x += 2; //On fait avancer le perso de 2 cases;
