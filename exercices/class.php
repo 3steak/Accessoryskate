@@ -19,7 +19,7 @@ class Soldat
     public $vie = 100;
     public $defense = 10;
     public $x = 0;
-
+o
     /**
      * attaquer
      *
