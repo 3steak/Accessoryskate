@@ -1,5 +1,12 @@
-<?php include "header.php";
+<?php include "admin/header.php";
+
+include "module/home/controler_category.php";
+$home = new HomeControler();
+
+var_dump($home->categories);
+
 ?>
+
 
 <div id=body>
     <p>CRUD !</p>
@@ -9,10 +16,5 @@
         </a>
     </button>
 </div>
-<?php include "footer.php";
+<?php include "admin/footer.php";
 ?>
-
-
-
-
-
