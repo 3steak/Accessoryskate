@@ -1,61 +1,85 @@
-
-h1
-{
-    text-align: right;
-    padding: 5px;
-    margin: 2px;
-    font-family: sans-serif;
-    font-size: 12px;
-}
-
-*
-{
+* {
     padding: 0;
     margin: 0;
 }
-nav
-{
-    background-color: #222;
-    font-family: sans-serif;
-}
-ul{
-    list-style-type: none;
-}
-a{
-    color: whitesmoke;
-    text-decoration: none;
+
+#bar {
+    background-color: #191F58;
+    height: 33px;
+    width: 100vw;
 }
 
-a:hover
-{
-    text-decoration: underline;
+#logo {
+
+    width: 183px;
+    height: 191px;
+    left: 17px;
+    top: 33px;
+
 }
 
-.menu li
-{
-font-size: 15px;
-padding: 15px 10px;
-}
-
-
-.logo a
-{
-
-    font-size: 20px;
-    position: absolute;
-    padding: 20px 15px;
-    
-}
-
-.menu
-{
+.menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 60vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
     align-items: center;
 }
 
-.panier :hover
-{
-    text-decoration: underline;
+#espaceperso {
+    display: flex;
+
+}
+
+
+.comptepanier {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+header {
+    background-color: #C4C4C41F;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+#photoaccueil {
+    margin-top: 30px;
+    width: 100vw;
+
+}
+
+#divphotoaccueil {
+    position: relative;
+}
+
+#divphotoaccueil h1,
+h2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 55px;
+}
+
+#divphotoaccueil h2 {
+    top: 85%;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    color: #252853;
 }

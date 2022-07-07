@@ -1,10 +1,5 @@
 <?php
-try {
-    $db = new PDO('mysql:host=localhost;dbname=accessory_skate;charset=utf8', 'root', '');
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (Exception $e) {
-    die('Erreur : ' . $e->getMessage());
-}
+include "module/home/controler_category.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -23,34 +18,49 @@ try {
 </head>
 
 <body>
+    <div id="bar">JE SUIS LA BAR</div>
+    <header>
+        <div>
+            <a href="index.php">
+                <img id="logo" src="assets/image/header/logo.png">
+            </a>
+        </div>
+        <nav>
+
+            <ul class="menu">
+
+                <?php
+                $home = new HomeControler;
+
+                foreach ($home->categories as $category) { ?>
+                    <li><?= $category['name']; ?></li>
+                <?php
+                };
+
+                ?>
 
 
-    <h1> AccessorySkate, le site d'accessoires et gadgets dont vous avez besoin ! </h1>
+            </ul>
+        </nav>
+        <div id="espaceperso">
+            <ul class="comptepanier">
+                <li>
+                    <!--<a href=""></a> !-->
+                    <img src="assets/image/header/logovotrecompte.png">
+                </li>
+                <li>
+                    <!--<a href=""></a> !-->
+                    <img src="assets/image/header/logopanier.png">
+                </li>
+            </ul>
+        </div>
+    </header>
 
-    <nav>
-
-        <!-- logo du site -->
-        <h2 class="logo"><a href="index.php">AccessorySkate</a></h2>
-
-        <!-- liste ul pour connexion deco panier et fav ( si co ) -->
-        <ul class="menu">
+    <div id="divphotoaccueil">
+        <img id="photoaccueil" src="assets/image/header/photoaccueil.png">
+        <h1>ACCESSORY SKATE</h1>
+        <h2>LE SITE D’ACCESSOIRES & GADGETS DONT VOUS AVEZ BESOIN</h2>
+    </div>
 
 
-            <!-- Connexion -->
-            <li class="connexion button"><a href="#">Connexion</a></li>
-
-            <!-- Deconnexion -->
-            <li class="deconnexion button secondary"><a href="#">Deconnexion</a></li>
-
-            <!-- Panier -->
-            <li class="panier"> <a href="#">
-                    <img alt="panier" src="assets/image/navbar/Panier.png" ,height=30, width=30>
-                </a>
-            </li>
-
-            <!-- Favoris si connecté -->
-            <li class="fav"><a href="#">Favoris</a></li>
-
-        </ul>
-
-    </nav>
+</body>

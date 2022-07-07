@@ -22,4 +22,5 @@ class ModelCategory
         $categories = $query->fetchAll(PDO::FETCH_ASSOC);
         return $categories;
     }
+    // FAIRE METHODES MODIFIER ET SUPPRIMER
 }
